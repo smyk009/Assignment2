@@ -1,0 +1,3 @@
+<button class="btn btn-outline-dark" (click) = "onButtonClick()">Display Details</button>
+<div *ngIf = "passHintSw">Password hind : {{passHint}}</div>
+<div *ngFor = "let numberClick of numberClicks; let i = index" [ngStyle] = "{backgroundColor : i>=4 ? 'blue' : 'transparent'}"  [ngClass] = "{textColor : count >= 5}">{{numberClick}}</div>
